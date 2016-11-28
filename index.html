@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <svg id="game-board" width="30%" viewBox="0 0 690 690">
+      <!-- Create all the shapes for your game board here! -->
+        <rect x="50" y="50" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="TLS()"/>
+        <rect x="260" y="50" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="TMS()"/>
+        <rect x="470" y="50" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="TRS()"/>
+        <rect x="50" y="260" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="MLS()"/>
+        <rect x="260" y="260" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="MMS()"/>
+        <rect x="470" y="260" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="MRS()"/>
+        <rect x="50" y="470" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="BLS()"/>
+        <rect x="260" y="470" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="BMS()"/>
+        <rect x="470" y="470" width="190" height="190" rx="30" fill="white" stroke="teal" stroke-width="10" onclick="BRS()"/>
+    </svg>
+
+    <button onclick="restart()" class="button">
+      Click to restart
+    </button>
+
+    <!-- This line of code points to your JavaScript file. No need to touch it. -->
+    <script src="tic-tac-toe.js"></script>
+  </body>
+</html>
